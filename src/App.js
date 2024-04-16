@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import ClassState from './components/ClassState';
+import FunctionState from './components/FunctionState';
+import { v4 as uuidv4} from 'uuid';
+import Todo from './components/Todo';
+import AddTodoForm from './components/AddTodoForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="text-center">useState hooks</h1>
+      {/* <ClassState/>
+      <hr />
+      <FunctionState/> */}
+      <hr />
+      <div className="container">
+        <Todo/>
+        <AddTodoForm/>
+      </div>
+      
     </div>
   );
 }
