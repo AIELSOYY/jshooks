@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-import ClassState from './components/ClassState';
-import FunctionState from './components/FunctionState';
-import { v4 as uuidv4} from 'uuid';
-import Todo from './components/Todo';
-import AddTodoForm from './components/AddTodoForm';
+// import logo from './logo.svg';
+// import ClassState from './components/ClassState';
+// import FunctionState from './components/FunctionState';
+// import { v4 as uuidv4} from 'uuid';
+// import Todo from './components/Todo';
+// import AddTodoForm from './components/AddTodoForm';
+import ClassCount from './components/ClassCount'
+import FunctionCount from './components/FunctionCount';
 
 function App() {
   return (
-    <div>
+    <div >
       <h1 className="text-center">useState hooks</h1>
       {/* <ClassState/>
       <hr />
       <FunctionState/> */}
-      <hr />
+      {/* <hr />
       <div className="container">
         <Todo/>
-        <AddTodoForm/>
-      </div>
-      
+      </div> */}
+      {/* <ClassCount/> */}
+      <FunctionCount/>
     </div>
   );
 }

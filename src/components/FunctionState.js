@@ -4,12 +4,12 @@ const FunctionState = () => {
 
     const [counter, setCounter] = useState(0)
 
-    const addOne = () => {
-        setCounter(counter+1)
-    }
+    // const addOne = () => {
+    //     setCounter(counter+1)
+    // }
   return (
     <div>
-      <p>Fuction State: {counter}</p>
+      <p>Function State: {counter}</p>
       <button onClick={() =>setCounter(prevCounter => prevCounter +1)}>State dans Function</button>
     </div>
   )
